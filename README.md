@@ -5,3 +5,4 @@ This car use four electromagnetic sensors to detact road in front the car. Then 
 ## Speed
 This car was driven by one motor. If electromagnetic sensor data shows the car is runing in stright line (trning motor keeps in the middle for some time), then car runs in a higher speed. If the car is turning, car runs at a lower speed. The motor is driven by PWM waves.
 ![alt text](http://url/to/Picture of car.jpeg)
+![Alt text](relative/path/to/Picture of car.jpeg?raw=true "Title")
