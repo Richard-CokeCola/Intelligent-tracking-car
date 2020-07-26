@@ -1,0 +1,421 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.30.1.53127/W32 for ARM              27/Apr/2014  11:01:47 #
+# Copyright 2007-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug\Exe\fir #
+#                    e_gpio_demo.out                                          #
+#    Map file     =  C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug\List\fi #
+#                    re_gpio_demo.map                                         #
+#    Command line =  C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug\Obj\LED #
+#                    .o C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug\Obj\ #
+#                    alloc.o C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug #
+#                    \Obj\arm_cm4.o C:\Users\maidou\Desktop\4.30\build\sd_dem #
+#                    o\Debug\Obj\assert.o C:\Users\maidou\Desktop\4.30\build\ #
+#                    sd_demo\Debug\Obj\crt0.o C:\Users\maidou\Desktop\4.30\bu #
+#                    ild\sd_demo\Debug\Obj\delay.o                            #
+#                    C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug\Obj\dis #
+#                    kio.o C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug\O #
+#                    bj\ff.o C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug #
+#                    \Obj\gpio.o C:\Users\maidou\Desktop\4.30\build\sd_demo\D #
+#                    ebug\Obj\io.o C:\Users\maidou\Desktop\4.30\build\sd_demo #
+#                    \Debug\Obj\isr.o C:\Users\maidou\Desktop\4.30\build\sd_d #
+#                    emo\Debug\Obj\lptmr.o C:\Users\maidou\Desktop\4.30\build #
+#                    \sd_demo\Debug\Obj\main.o C:\Users\maidou\Desktop\4.30\b #
+#                    uild\sd_demo\Debug\Obj\mcg.o                             #
+#                    C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug\Obj\mem #
+#                    test.o C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug\ #
+#                    Obj\printf.o C:\Users\maidou\Desktop\4.30\build\sd_demo\ #
+#                    Debug\Obj\queue.o C:\Users\maidou\Desktop\4.30\build\sd_ #
+#                    demo\Debug\Obj\sdhc.o C:\Users\maidou\Desktop\4.30\build #
+#                    \sd_demo\Debug\Obj\start.o C:\Users\maidou\Desktop\4.30\ #
+#                    build\sd_demo\Debug\Obj\startup.o                        #
+#                    C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug\Obj\std #
+#                    lib.o C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug\O #
+#                    bj\sysinit.o C:\Users\maidou\Desktop\4.30\build\sd_demo\ #
+#                    Debug\Obj\uart.o C:\Users\maidou\Desktop\4.30\build\sd_d #
+#                    emo\Debug\Obj\uif.o C:\Users\maidou\Desktop\4.30\build\s #
+#                    d_demo\Debug\Obj\vectors.o C:\Users\maidou\Desktop\4.30\ #
+#                    build\sd_demo\Debug\Obj\wdog.o                           #
+#                    C:\Users\maidou\Desktop\4.30\src\LIB\CMSIS\iar_cortexM4l #
+#                    _math.a -o C:\Users\maidou\Desktop\4.30\build\sd_demo\De #
+#                    bug\Exe\fire_gpio_demo.out --map                         #
+#                    C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug\List\fi #
+#                    re_gpio_demo.map --config "C:\Users\maidou\Desktop\4.30\ #
+#                    build\sd_demo\..\config files\fire_ROM_K60N512.icf"      #
+#                    --semihosting --entry __iar_program_start --vfe          #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"A2":  place at 0x00000410 { ro section .noinit };
+"P1":  place in [from 0x00000000 to 0x00040000] { ro, block CodeRelocate };
+"P2":  place in [from 0x1fff0410 to 0x20010000] {
+          rw, block CodeRelocateRam, block CSTACK, block HEAP };
+
+  Section              Kind        Address    Size  Object
+  -------              ----        -------    ----  ------
+"A1":                                        0x410
+  .intvec              const    0x00000000   0x410  vectors.o [1]
+                              - 0x00000410   0x410
+
+"A2":                                         0x3c
+  .noinit              ro code  0x00000410    0x3c  crt0.o [1]
+                              - 0x0000044c    0x3c
+
+"P1":                                       0x423c
+  .text                ro code  0x0000044c  0x14b6  ff.o [1]
+  .text                ro code  0x00001902    0x22  zero_init3.o [4]
+  .text                ro code  0x00001924   0x6c0  diskio.o [1]
+  .text                ro code  0x00001fe4   0xad4  sdhc.o [1]
+  .text                ro code  0x00002ab8    0x48  lptmr.o [1]
+  .text                ro code  0x00002b00   0x55c  printf.o [1]
+  .text                ro code  0x0000305c    0x20  stdlib.o [1]
+  .text                ro code  0x0000307c   0x520  start.o [1]
+  .text                ro code  0x0000359c    0x38  wdog.o [1]
+  .text                ro code  0x000035d4    0xc0  startup.o [1]
+  .text                ro code  0x00003694    0x5c  sysinit.o [1]
+  .text                ro code  0x000036f0    0xa8  main.o [1]
+  .text                ro code  0x00003798     0xc  arm_cm4.o [1]
+  Veneer               ro code  0x000037a4     0x8  - Linker created -
+  .text                ro code  0x000037ac   0x30c  mcg.o [1]
+  .text                ro code  0x00003ab8   0x20c  uart.o [1]
+  .rodata              const    0x00003cc4   0x100  sdhc.o [1]
+  .text                ro code  0x00003dc4    0xc4  gpio.o [1]
+  .text                ro code  0x00003e88    0x20  assert.o [1]
+  .text                ro code  0x00003ea8    0xb4  LED.o [1]
+  .text                ro code  0x00003f5c    0x24  delay.o [1]
+  CodeRelocate                  0x00003f80    0x50  <Block>
+    Initializer bytes  ro data  0x00003f80    0x50  <for CodeRelocateRam-1>
+  .rodata              const    0x00003fd0    0x4c  assert.o [1]
+  .data_init                    0x0000401c    0x4c  <Block>
+    Initializer bytes  ro data  0x0000401c    0x4c  <for .data-1>
+  .rodata              const    0x00004068    0x48  start.o [1]
+  .rodata              const    0x000040b0    0x40  start.o [1]
+  .rodata              const    0x000040f0    0x38  gpio.o [1]
+  .rodata              const    0x00004128    0x30  vectors.o [1]
+  .rodata              const    0x00004158    0x2c  start.o [1]
+  .text                ro code  0x00004184    0x2c  data_init3.o [4]
+  .rodata              const    0x000041b0    0x28  start.o [1]
+  .rodata              const    0x000041d8    0x28  start.o [1]
+  .iar.init_table      const    0x00004200    0x10  - Linker created -
+  .rodata              const    0x00004210    0x20  start.o [1]
+  .rodata              const    0x00004230    0x20  start.o [1]
+  .rodata              const    0x00004250    0x20  start.o [1]
+  .rodata              const    0x00004270    0x20  start.o [1]
+  .rodata              const    0x00004290    0x20  start.o [1]
+  .text                ro code  0x000042b0    0x20  vectors.o [1]
+  .rodata              const    0x000042d0    0x1c  start.o [1]
+  .rodata              const    0x000042ec    0x1c  start.o [1]
+  .rodata              const    0x00004308    0x1c  start.o [1]
+  .rodata              const    0x00004324    0x18  start.o [1]
+  .rodata              const    0x0000433c    0x18  start.o [1]
+  .rodata              const    0x00004354    0x18  start.o [1]
+  .rodata              const    0x0000436c    0x18  start.o [1]
+  .rodata              const    0x00004384    0x18  start.o [1]
+  .rodata              const    0x0000439c    0x18  start.o [1]
+  .rodata              const    0x000043b4    0x18  start.o [1]
+  .rodata              const    0x000043cc    0x18  start.o [1]
+  .text                ro code  0x000043e4    0x16  cmain.o [4]
+  .text                ro code  0x000043fa     0x4  low_level_init.o [3]
+  .text                ro code  0x000043fe     0x4  exit.o [3]
+  .text                ro code  0x00004404     0xa  cexit.o [4]
+  .text                ro code  0x00004410    0x14  exit.o [5]
+  .rodata              const    0x00004424    0x14  main.o [1]
+  .rodata              const    0x00004438    0x14  start.o [1]
+  .rodata              const    0x0000444c    0x14  start.o [1]
+  .rodata              const    0x00004460    0x14  start.o [1]
+  .rodata              const    0x00004474    0x14  start.o [1]
+  .rodata              const    0x00004488    0x14  start.o [1]
+  .rodata              const    0x0000449c    0x14  start.o [1]
+  .rodata              const    0x000044b0    0x14  start.o [1]
+  .rodata              const    0x000044c4    0x14  start.o [1]
+  .rodata              const    0x000044d8    0x10  ff.o [1]
+  .rodata              const    0x000044e8    0x10  main.o [1]
+  .rodata              const    0x000044f8    0x10  main.o [1]
+  .rodata              const    0x00004508    0x10  main.o [1]
+  .rodata              const    0x00004518    0x10  start.o [1]
+  .rodata              const    0x00004528    0x10  start.o [1]
+  .rodata              const    0x00004538    0x10  start.o [1]
+  .rodata              const    0x00004548    0x10  start.o [1]
+  .rodata              const    0x00004558    0x10  start.o [1]
+  .rodata              const    0x00004568    0x10  start.o [1]
+  .rodata              const    0x00004578    0x10  start.o [1]
+  .rodata              const    0x00004588    0x10  start.o [1]
+  .rodata              const    0x00004598    0x10  start.o [1]
+  .rodata              const    0x000045a8    0x10  start.o [1]
+  .rodata              const    0x000045b8    0x10  start.o [1]
+  .rodata              const    0x000045c8    0x10  start.o [1]
+  .rodata              const    0x000045d8    0x10  start.o [1]
+  .text                ro code  0x000045e8    0x10  io.o [1]
+  .rodata              const    0x000045f8     0xc  main.o [1]
+  .rodata              const    0x00004604     0xc  start.o [1]
+  .rodata              const    0x00004610     0xc  start.o [1]
+  .rodata              const    0x0000461c     0xc  start.o [1]
+  .rodata              const    0x00004628     0xc  start.o [1]
+  .text                ro code  0x00004634     0xc  cstartup_M.o [4]
+  .rodata              const    0x00004640     0x8  sdhc.o [1]
+  .rodata              const    0x00004648     0x8  start.o [1]
+  .rodata              const    0x00004650     0x8  start.o [1]
+  .rodata              const    0x00004658     0x8  start.o [1]
+  .rodata              const    0x00004660     0x8  start.o [1]
+  .rodata              const    0x00004668     0x8  start.o [1]
+  .rodata              const    0x00004670     0x8  start.o [1]
+  .rodata              const    0x00004678     0x8  start.o [1]
+  .rodata              const    0x00004680     0x8  start.o [1]
+  .rodata              const    0x00004688     0x0  bwt_init3c.o [4]
+                              - 0x00004688  0x423c
+
+"P2", part 1 of 2:                            0x9c
+  CodeRelocateRam               0x1fff0410    0x50  <Block>
+    CodeRelocateRam-1           0x1fff0410    0x50  <Init block>
+      .textrw          inited   0x1fff0410    0x50  mcg.o [1]
+  .data                         0x1fff0460    0x4c  <Block>
+    .data-1                     0x1fff0460    0x4c  <Init block>
+      .data            inited   0x1fff0460     0x1  diskio.o [1]
+      .data            inited   0x1fff0464    0x14  gpio.o [1]
+      .data            inited   0x1fff0478    0x14  gpio.o [1]
+      .data            inited   0x1fff048c     0x8  mcg.o [1]
+      .data            inited   0x1fff0494    0x18  uart.o [1]
+                              - 0x1fff04ac    0x9c
+
+"P2", part 2 of 2:                           0x236
+  .bss                          0x1fff04ac   0x236  <Block>
+    .bss               zero     0x1fff04ac     0x4  ff.o [1]
+    .bss               zero     0x1fff04b0    0x14  sdhc.o [1]
+    .bss               zero     0x1fff04c4     0x4  sdhc.o [1]
+    .bss               zero     0x1fff04c8   0x204  sdhc.o [1]
+    .bss               zero     0x1fff06cc     0x8  sdhc.o [1]
+    .bss               zero     0x1fff06d4     0x4  sysinit.o [1]
+    .bss               zero     0x1fff06d8     0x4  sysinit.o [1]
+    .bss               zero     0x1fff06dc     0x4  sysinit.o [1]
+    .bss               zero     0x1fff06e0     0x2  ff.o [1]
+                              - 0x1fff06e2   0x236
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x236:
+          0x1fff04ac  0x236
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  rw code  ro data  rw data
+    ------            -------  -------  -------  -------
+C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug\Obj: [1]
+    LED.o                 180
+    arm_cm4.o              12
+    assert.o               32                76
+    crt0.o                 60
+    delay.o                36
+    diskio.o            1 728                 1        1
+    ff.o                5 302                16        6
+    gpio.o                196                99       40
+    io.o                   16
+    lptmr.o                72
+    main.o                168                80
+    mcg.o                 780       80       88        8
+    printf.o            1 372
+    sdhc.o              2 772               264      548
+    start.o             1 312             1 176
+    startup.o             192
+    stdlib.o               32
+    sysinit.o              92                         12
+    uart.o                524                24       24
+    vectors.o              32             1 088
+    wdog.o                 56
+    ----------------------------------------------------
+    Total:             14 966       80    2 912      639
+
+command line: [2]
+    ----------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                  4
+    low_level_init.o        4
+    ----------------------------------------------------
+    Total:                  8
+
+rt7M_tl.a: [4]
+    bwt_init3c.o
+    cexit.o                10
+    cmain.o                22
+    cstartup_M.o           12
+    data_init3.o           44
+    zero_init3.o           34
+    ----------------------------------------------------
+    Total:                122
+
+shb_l.a: [5]
+    exit.o                 20
+    ----------------------------------------------------
+    Total:                 20
+
+    Gaps                    4                          3
+    Linker created          8                16
+--------------------------------------------------------
+    Grand Total:       15 128       80    2 928      642
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.bss$$Base              0x1fff04ac          --   Gb  - Linker created -
+.bss$$Limit             0x1fff06e2          --   Gb  - Linker created -
+.data$$Base             0x1fff0460          --   Gb  - Linker created -
+.data$$Limit            0x1fff04ac          --   Gb  - Linker created -
+.data_init$$Base        0x0000401c          --   Gb  - Linker created -
+.data_init$$Limit       0x00004068          --   Gb  - Linker created -
+?main                   0x000043e5         Code  Gb  cmain.o [4]
+ASSERT_FAILED_STR       0x00003fd0   0x4c  Data  Gb  assert.o [1]
+CodeRelocate$$Base      0x00003f80          --   Gb  - Linker created -
+CodeRelocate$$Limit     0x00003fd0          --   Gb  - Linker created -
+CodeRelocateRam$$Base   0x1fff0410          --   Gb  - Linker created -
+CodeRelocateRam$$Limit  0x1fff0460          --   Gb  - Linker created -
+ESDHC_COMMAND_XFERTYP   0x00003cc4  0x100  Data  Gb  sdhc.o [1]
+FatFs                   0x1fff04ac    0x4  Data  Lc  ff.o [1]
+Fsid                    0x1fff06e0    0x2  Data  Lc  ff.o [1]
+GPIOx                   0x1fff0464   0x14  Data  Gb  gpio.o [1]
+K60_SDHC0_init          0x00004640    0x8  Data  Gb  sdhc.o [1]
+LED_init                0x00003ea9   0x34  Code  Gb  LED.o [1]
+PORTX                   0x1fff0478   0x14  Data  Gb  gpio.o [1]
+Region$$Table$$Base     0x00004200          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00004210          --   Gb  - Linker created -
+Reset_Handler           0x00000411         Code  Gb  crt0.o [1]
+SDHC_Card               0x1fff04b0   0x14  Data  Gb  sdhc.o [1]
+SDHC_Device             0x1fff06cc    0x8  Data  Gb  sdhc.o [1]
+SDHC_Info               0x1fff04c8  0x204  Data  Gb  sdhc.o [1]
+SDHC_Init               0x1fff04c4    0x4  Data  Gb  sdhc.o [1]
+SDHC_init               0x000020b1  0x100  Code  Gb  sdhc.o [1]
+SDHC_ioctl              0x00002361  0x6d4  Code  Gb  sdhc.o [1]
+SDHC_is_running         0x000021b1   0x18  Code  Gb  sdhc.o [1]
+SDHC_send_command       0x000021db  0x186  Code  Gb  sdhc.o [1]
+SDHC_set_baudrate       0x00001fe5   0xcc  Code  Gb  sdhc.o [1]
+SDHC_status_wait        0x000021c9   0x12  Code  Gb  sdhc.o [1]
+Stat                    0x1fff0460    0x1  Data  Lc  diskio.o [1]
+UARTx                   0x1fff0494   0x18  Data  Gb  uart.o [1]
+__BOOT_STACK_ADDRESS {Abs}
+                        0x2000fff8          --   Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x1fff0000          --   Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x00000000          --   Gb  command line/config [2]
+__cmain                 0x000043e5         Code  Gb  cmain.o [4]
+__code_start__ {Abs}    0x00000410          --   Gb  command line/config [2]
+__exit                  0x00004411   0x14  Code  Gb  exit.o [5]
+__iar_SB                0x00004688         Data  Gb  bwt_init3c.o [4]
+__iar_data_init3        0x00004185   0x2c  Code  Gb  data_init3.o [4]
+__iar_program_start     0x00004635         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x00001903   0x22  Code  Gb  zero_init3.o [4]
+__low_level_init        0x000043fb    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000  0x410  Data  Gb  vectors.o [1]
+_call_main              0x000043f1         Code  Gb  cmain.o [4]
+_exit                   0x00004405         Code  Gb  cexit.o [4]
+_main                   0x000043f7         Code  Gb  cmain.o [4]
+assert_failed           0x00003e89   0x20  Code  Gb  assert.o [1]
+bus_clk_khz             0x1fff06dc    0x4  Data  Gb  sysinit.o [1]
+check_fs                0x00000ed5   0x7a  Code  Lc  ff.o [1]
+chk_chr                 0x000004a3   0x14  Code  Lc  ff.o [1]
+chk_mounted             0x00000f4f  0x434  Code  Lc  ff.o [1]
+clust2sect              0x00000607   0x1a  Code  Gb  ff.o [1]
+common_startup          0x000035d5   0xc0  Code  Gb  startup.o [1]
+core_clk_khz            0x1fff06d4    0x4  Data  Gb  sysinit.o [1]
+core_clk_mhz            0x1fff06d8    0x4  Data  Gb  sysinit.o [1]
+cpu_identify            0x000031ab  0x20a  Code  Gb  start.o [1]
+create_chain            0x00000905   0xdc  Code  Lc  ff.o [1]
+create_name             0x00000cc5  0x170  Code  Lc  ff.o [1]
+default_isr             0x000042b1   0x20  Code  Gb  vectors.o [1]
+delayms                 0x00003f5d   0x1e  Code  Gb  delay.o [1]
+dir_find                0x00000bdb   0x68  Code  Lc  ff.o [1]
+dir_next                0x00000a99  0x142  Code  Lc  ff.o [1]
+dir_register            0x00000c43   0x82  Code  Lc  ff.o [1]
+dir_sdi                 0x000009e1   0xb8  Code  Lc  ff.o [1]
+disk_initialize         0x00001925  0x2ca  Code  Gb  diskio.o [1]
+disk_ioctl              0x00001ee9   0xba  Code  Gb  diskio.o [1]
+disk_read               0x00001c8b   0xd8  Code  Gb  diskio.o [1]
+disk_status             0x00001fa3   0x12  Code  Gb  diskio.o [1]
+disk_write              0x00001dc1  0x128  Code  Gb  diskio.o [1]
+exit                    0x000043ff    0x4  Code  Gb  exit.o [3]
+f_close                 0x00001881   0x1c  Code  Gb  ff.o [1]
+f_mount                 0x000013b1   0x32  Code  Gb  ff.o [1]
+f_open                  0x000013fd  0x1a6  Code  Gb  ff.o [1]
+f_putc                  0x0000189d   0x38  Code  Gb  ff.o [1]
+f_puts                  0x000018d5   0x2e  Code  Gb  ff.o [1]
+f_sync                  0x000017e3   0x9e  Code  Gb  ff.o [1]
+f_write                 0x000015a3  0x240  Code  Gb  ff.o [1]
+flash_identify          0x000033b5   0xbe  Code  Gb  start.o [1]
+follow_path             0x00000e35   0xa0  Code  Lc  ff.o [1]
+get_fat                 0x00000621  0x102  Code  Gb  ff.o [1]
+get_fattime             0x00001fe1    0x4  Code  Gb  diskio.o [1]
+gpio_init               0x00003dc5   0xb8  Code  Gb  gpio.o [1]
+led                     0x00003edd   0x1e  Code  Gb  LED.o [1]
+main                    0x000036f1   0x92  Code  Gb  main.o [1]
+mcg_div                 0x1fff048c    0x8  Data  Gb  mcg.o [1]
+mem_cmp                 0x0000047f   0x24  Code  Lc  ff.o [1]
+mem_cpy                 0x0000044d   0x1c  Code  Lc  ff.o [1]
+mem_set                 0x00000469   0x16  Code  Lc  ff.o [1]
+move_window             0x000004b7   0x78  Code  Lc  ff.o [1]
+out_char                0x000045e9   0x10  Code  Gb  io.o [1]
+pll_init                0x000037ad  0x30c  Code  Gb  mcg.o [1]
+printf                  0x00003033   0x26  Code  Gb  printf.o [1]
+printk                  0x00002c29  0x40a  Code  Gb  printf.o [1]
+printk_mknumstr         0x00002b33   0xaa  Code  Lc  printf.o [1]
+printk_pad_space        0x00002c03   0x26  Code  Lc  printf.o [1]
+printk_pad_zero         0x00002bdd   0x26  Code  Lc  printf.o [1]
+printk_putc             0x00002b01   0x32  Code  Lc  printf.o [1]
+put_fat                 0x00000723  0x170  Code  Gb  ff.o [1]
+rcvr_datablock          0x00001bef   0x9c  Code  Lc  diskio.o [1]
+remove_chain            0x00000893   0x72  Code  Lc  ff.o [1]
+set_sys_dividers        0x1fff0411   0x50  Code  Gb  mcg.o [1]
+start                   0x0000307d  0x12e  Code  Gb  start.o [1]
+strlen                  0x0000305d   0x20  Code  Gb  stdlib.o [1]
+sync                    0x0000052f   0xd8  Code  Lc  ff.o [1]
+sysinit                 0x00003695   0x48  Code  Gb  sysinit.o [1]
+time_delay_ms           0x00002ab9   0x38  Code  Gb  lptmr.o [1]
+uart_init               0x00003ab9  0x1ae  Code  Gb  uart.o [1]
+uart_putchar            0x00003c67   0x1a  Code  Gb  uart.o [1]
+validate                0x00001383   0x2e  Code  Lc  ff.o [1]
+water_lights            0x00003efb   0x5c  Code  Gb  LED.o [1]
+wdog_disable            0x0000359d   0x16  Code  Gb  wdog.o [1]
+wdog_unlock             0x000035b5   0x16  Code  Gb  wdog.o [1]
+write_vtor              0x00003799    0x6  Code  Gb  arm_cm4.o [1]
+xmit_datablock          0x00001d63   0x5e  Code  Lc  diskio.o [1]
+
+
+[1] = C:\Users\maidou\Desktop\4.30\build\sd_demo\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  15 128 bytes of readonly  code memory
+      80 bytes of readwrite code memory
+   2 928 bytes of readonly  data memory
+     642 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

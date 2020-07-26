@@ -1,0 +1,632 @@
+###############################################################################
+#
+# IAR ELF Linker V7.30.4.8167/W32 for ARM                 06/May/2017  06:52:42
+# Copyright 2007-2014 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Exe\fire_gpio_demo.out
+#    Map file     =  
+#        C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\List\fire_gpio_demo.map
+#    Command line =  
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\adc.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\alloc.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\app.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\app_hooks.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\arm_cm4.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\assert.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\AT24C02.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\BSP.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\crt0.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\delay.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\diskio.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\dma.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\exti.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\ff.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\flash.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\FTM.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\gpio.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\i2c.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\src\LIB\CMSIS\iar_cortexM4l_math.a"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\io.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\isr.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\LED.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\lptmr.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\main.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\mcg.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\memtest.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\moter_pid.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\OLED.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\os_core.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\os_cpu_a.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\os_cpu_c.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\os_dbg.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\os_flag.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\os_mbox.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\os_mem.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\os_mutex.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\os_q.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\os_sem.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\os_task.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\os_time.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\os_tmr.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\PIT.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\printf.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\queue.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\sccb.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\sdhc.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\sensor.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\Speed_Control.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\start.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\startup.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\stdlib.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\sysinit.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\Turn.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\uart.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\uif.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\vectors.o"
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Obj\wdog.o" -o
+#        "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\Exe\fire_gpio_demo.out"
+#        --map "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\Debug\List\fire_gpio_demo.map"
+#        --config "C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题
+#        解决丢线丢失问题\程序5.5.7.42 速度125 240
+#        稳定\电轨组程序框架\build\fire_demo\..\..\iar_config_files\fire_ROM_K60N512.icf"
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"A2":  place at 0x00000410 { ro section .noinit };
+"P1":  place in [from 0x00000000 to 0x00040000] { ro, block CodeRelocate };
+"P2":  place in [from 0x1fff0410 to 0x20010000] {
+          rw, block CodeRelocateRam, block CSTACK, block HEAP };
+
+  Section              Kind        Address    Size  Object
+  -------              ----        -------    ----  ------
+"A1":                                        0x410
+  .intvec              const    0x00000000   0x410  vectors.o [1]
+                              - 0x00000410   0x410
+
+"A2":                                         0x3c
+  .noinit              ro code  0x00000410    0x3c  crt0.o [1]
+                              - 0x0000044c    0x3c
+
+"P1":                                       0x3b58
+  .rodata              const    0x0000044c   0x5f0  OLED.o [1]
+  .text                ro code  0x00000a3c   0x5a0  OLED.o [1]
+  .text                ro code  0x00000fdc    0xc4  gpio.o [1]
+  .text                ro code  0x000010a0    0x20  assert.o [1]
+  .text                ro code  0x000010c0    0xb4  LED.o [1]
+  .text                ro code  0x00001174   0x4d0  printf.o [1]
+  .text                ro code  0x00001644    0x20  delay.o [1]
+  .text                ro code  0x00001664    0x1a  stdlib.o [1]
+  .text                ro code  0x0000167e    0x22  zero_init3.o [5]
+  .text                ro code  0x000016a0   0x4fc  start.o [1]
+  .text                ro code  0x00001b9c    0x38  wdog.o [1]
+  .text                ro code  0x00001bd4    0x9c  startup.o [1]
+  .text                ro code  0x00001c70    0x5c  sysinit.o [1]
+  .text                ro code  0x00001ccc   0x274  main.o [1]
+  .text                ro code  0x00001f40    0xb8  arm_cm4.o [1]
+  Veneer               ro code  0x00001ff8     0x8  - Linker created -
+  .text                ro code  0x00002000   0x2ec  mcg.o [1]
+  .text                ro code  0x000022ec   0x200  uart.o [1]
+  .text                ro code  0x000024ec   0x390  sensor.o [1]
+  .text                ro code  0x0000287c    0x20  Speed_Control.o [1]
+  .text                ro code  0x0000289c    0x20  Turn.o [1]
+  .text                ro code  0x000028bc    0x30  I32ToDbl.o [4]
+  .text                ro code  0x000028ec   0x1a2  DblMul.o [4]
+  .text                ro code  0x00002a90    0x58  DblToI32.o [4]
+  .text                ro code  0x00002ae8    0x68  PIT.o [1]
+  .text                ro code  0x00002b50    0xbc  lptmr.o [1]
+  .text                ro code  0x00002c0c   0x3ac  FTM.o [1]
+  .text                ro code  0x00002fb8    0x74  moter_pid.o [1]
+  .text                ro code  0x0000302c   0x392  adc.o [1]
+  .text                ro code  0x000033c0   0x246  DblDiv.o [4]
+  .text                ro code  0x00003608   0x158  isr.o [1]
+  .data_init                    0x00003760    0x5c  <Block>
+    Initializer bytes  const    0x00003760    0x5c  <for .data-1>
+  .rodata              const    0x000037bc    0x54  OLED.o [1]
+  .rodata              const    0x00003810    0x4c  assert.o [1]
+  CodeRelocate                  0x0000385c    0x4c  <Block>
+    Initializer bytes  const    0x0000385c    0x4c  <for CodeRelocateRam-1>
+  .rodata              const    0x000038a8    0x48  adc.o [1]
+  .rodata              const    0x000038f0    0x48  gpio.o [1]
+  .rodata              const    0x00003938    0x48  lptmr.o [1]
+  .rodata              const    0x00003980    0x48  start.o [1]
+  .rodata              const    0x000039c8    0x44  FTM.o [1]
+  .rodata              const    0x00003a0c    0x40  start.o [1]
+  .rodata              const    0x00003a4c    0x38  arm_cm4.o [1]
+  .rodata              const    0x00003a84    0x30  vectors.o [1]
+  .rodata              const    0x00003ab4    0x2c  start.o [1]
+  .rodata              const    0x00003ae0    0x28  start.o [1]
+  .rodata              const    0x00003b08    0x28  start.o [1]
+  .text                ro code  0x00003b30    0x28  data_init.o [5]
+  .iar.init_table      const    0x00003b58    0x10  - Linker created -
+  .rodata              const    0x00003b68    0x20  isr.o [1]
+  .rodata              const    0x00003b88    0x20  start.o [1]
+  .rodata              const    0x00003ba8    0x20  start.o [1]
+  .rodata              const    0x00003bc8    0x20  start.o [1]
+  .rodata              const    0x00003be8    0x20  start.o [1]
+  .rodata              const    0x00003c08    0x20  start.o [1]
+  .text                ro code  0x00003c28    0x20  vectors.o [1]
+  .rodata              const    0x00003c48    0x1c  start.o [1]
+  .rodata              const    0x00003c64    0x1c  start.o [1]
+  .rodata              const    0x00003c80    0x1c  start.o [1]
+  .text                ro code  0x00003c9c    0x1a  cmain.o [5]
+  .text                ro code  0x00003cb6     0x4  low_level_init.o [3]
+  .text                ro code  0x00003cba     0x4  exit.o [3]
+  .text                ro code  0x00003cc0     0xa  cexit.o [5]
+  .text                ro code  0x00003ccc    0x14  exit.o [6]
+  .rodata              const    0x00003ce0    0x18  start.o [1]
+  .rodata              const    0x00003cf8    0x18  start.o [1]
+  .rodata              const    0x00003d10    0x18  start.o [1]
+  .rodata              const    0x00003d28    0x18  start.o [1]
+  .rodata              const    0x00003d40    0x18  start.o [1]
+  .rodata              const    0x00003d58    0x18  start.o [1]
+  .rodata              const    0x00003d70    0x18  start.o [1]
+  .rodata              const    0x00003d88    0x18  start.o [1]
+  .rodata              const    0x00003da0    0x14  start.o [1]
+  .rodata              const    0x00003db4    0x14  start.o [1]
+  .rodata              const    0x00003dc8    0x14  start.o [1]
+  .rodata              const    0x00003ddc    0x14  start.o [1]
+  .rodata              const    0x00003df0    0x14  start.o [1]
+  .rodata              const    0x00003e04    0x14  start.o [1]
+  .rodata              const    0x00003e18    0x14  start.o [1]
+  .rodata              const    0x00003e2c    0x14  start.o [1]
+  .rodata              const    0x00003e40    0x10  start.o [1]
+  .rodata              const    0x00003e50    0x10  start.o [1]
+  .rodata              const    0x00003e60    0x10  start.o [1]
+  .rodata              const    0x00003e70    0x10  start.o [1]
+  .rodata              const    0x00003e80    0x10  start.o [1]
+  .rodata              const    0x00003e90    0x10  start.o [1]
+  .rodata              const    0x00003ea0    0x10  start.o [1]
+  .rodata              const    0x00003eb0    0x10  start.o [1]
+  .rodata              const    0x00003ec0    0x10  start.o [1]
+  .rodata              const    0x00003ed0    0x10  start.o [1]
+  .rodata              const    0x00003ee0    0x10  start.o [1]
+  .rodata              const    0x00003ef0    0x10  start.o [1]
+  .rodata              const    0x00003f00    0x10  start.o [1]
+  .text                ro code  0x00003f10     0xe  io.o [1]
+  .rodata              const    0x00003f20     0xc  start.o [1]
+  .rodata              const    0x00003f2c     0xc  start.o [1]
+  .rodata              const    0x00003f38     0xc  start.o [1]
+  .rodata              const    0x00003f44     0xc  start.o [1]
+  .text                ro code  0x00003f50     0xc  cstartup_M.o [5]
+  .rodata              const    0x00003f5c     0x8  OLED.o [1]
+  .rodata              const    0x00003f64     0x8  start.o [1]
+  .rodata              const    0x00003f6c     0x8  start.o [1]
+  .rodata              const    0x00003f74     0x8  start.o [1]
+  .rodata              const    0x00003f7c     0x8  start.o [1]
+  .rodata              const    0x00003f84     0x8  start.o [1]
+  .rodata              const    0x00003f8c     0x8  start.o [1]
+  .rodata              const    0x00003f94     0x8  start.o [1]
+  .rodata              const    0x00003f9c     0x8  start.o [1]
+  .rodata              const    0x00003fa4     0x0  zero_init3.o [5]
+                              - 0x00003fa4  0x3b58
+
+"P2":                                        0x108
+  .data                         0x1fff0410    0x5c  <Block>
+    .data-1                     0x1fff0410    0x5c  <Init block>
+      .data            inited   0x1fff0410     0x8  adc.o [1]
+      .data            inited   0x1fff0418     0xc  FTM.o [1]
+      .data            inited   0x1fff0424    0x14  gpio.o [1]
+      .data            inited   0x1fff0438    0x14  gpio.o [1]
+      .data            inited   0x1fff044c     0x8  mcg.o [1]
+      .data            inited   0x1fff0454    0x18  uart.o [1]
+  CodeRelocateRam               0x1fff046c    0x4c  <Block>
+    CodeRelocateRam-1           0x1fff046c    0x4c  <Init block>
+      .textrw          inited   0x1fff046c    0x4c  mcg.o [1]
+  .bss                          0x1fff04b8    0x60  <Block>
+    .bss               zero     0x1fff04b8    0x10  adc.o [1]
+    .bss               zero     0x1fff04c8     0x4  isr.o [1]
+    .bss               zero     0x1fff04cc     0x4  main.o [1]
+    .bss               zero     0x1fff04d0     0x4  main.o [1]
+    .bss               zero     0x1fff04d4     0x4  main.o [1]
+    .bss               zero     0x1fff04d8     0x4  moter_pid.o [1]
+    .bss               zero     0x1fff04dc     0x4  moter_pid.o [1]
+    .bss               zero     0x1fff04e0     0x4  moter_pid.o [1]
+    .bss               zero     0x1fff04e4     0x4  moter_pid.o [1]
+    .bss               zero     0x1fff04e8     0x4  sensor.o [1]
+    .bss               zero     0x1fff04ec     0x4  sensor.o [1]
+    .bss               zero     0x1fff04f0     0x4  sensor.o [1]
+    .bss               zero     0x1fff04f4     0x4  sensor.o [1]
+    .bss               zero     0x1fff04f8     0x4  sensor.o [1]
+    .bss               zero     0x1fff04fc     0x4  sensor.o [1]
+    .bss               zero     0x1fff0500     0x4  sysinit.o [1]
+    .bss               zero     0x1fff0504     0x4  sysinit.o [1]
+    .bss               zero     0x1fff0508     0x4  sysinit.o [1]
+    .bss               zero     0x1fff050c     0x2  isr.o [1]
+    .bss               zero     0x1fff050e     0x2  moter_pid.o [1]
+    .bss               zero     0x1fff0510     0x1  isr.o [1]
+    .bss               zero     0x1fff0511     0x1  isr.o [1]
+    .bss               zero     0x1fff0512     0x1  isr.o [1]
+    .bss               zero     0x1fff0513     0x1  isr.o [1]
+    .bss               zero     0x1fff0514     0x1  isr.o [1]
+    .bss               zero     0x1fff0515     0x1  isr.o [1]
+    .bss               zero     0x1fff0516     0x1  isr.o [1]
+    .bss               zero     0x1fff0517     0x1  isr.o [1]
+                              - 0x1fff0518   0x108
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x60:
+          0x1fff04b8  0x60
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  rw code  ro data  rw data
+    ------            -------  -------  -------  -------
+C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题 解决丢线丢失问题\程序5.5.7.42 速度125 240 稳定\电轨组程序框架\build\fire_demo\Debug\Obj: [1]
+    FTM.o                 940                80       12
+    LED.o                 180
+    OLED.o              1 440             1 612
+    PIT.o                 104
+    Speed_Control.o        32
+    Turn.o                 32
+    adc.o                 914                80       24
+    arm_cm4.o             184                56
+    assert.o               32                76
+    crt0.o                 60
+    delay.o                32
+    gpio.o                196               112       40
+    io.o                   14
+    isr.o                 344                32       14
+    lptmr.o               188                72
+    main.o                628                         12
+    mcg.o                 748       76       84        8
+    moter_pid.o           116                         18
+    printf.o            1 232
+    sensor.o              912                         24
+    start.o             1 276             1 176
+    startup.o             156
+    stdlib.o               26
+    sysinit.o              92                         12
+    uart.o                512                24       24
+    vectors.o              32             1 088
+    wdog.o                 56
+    ----------------------------------------------------
+    Total:             10 478       76    4 492      188
+
+command line: [2]
+    ----------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                  4
+    low_level_init.o        4
+    ----------------------------------------------------
+    Total:                  8
+
+m7M_tl.a: [4]
+    DblDiv.o              582
+    DblMul.o              418
+    DblToI32.o             88
+    I32ToDbl.o             48
+    ----------------------------------------------------
+    Total:              1 136
+
+rt7M_tl.a: [5]
+    cexit.o                10
+    cmain.o                26
+    cstartup_M.o           12
+    data_init.o            40
+    zero_init3.o           34
+    ----------------------------------------------------
+    Total:                122
+
+shb_l.a: [6]
+    exit.o                 20
+    ----------------------------------------------------
+    Total:                 20
+
+    Gaps                   10                 2
+    Linker created          8                16
+--------------------------------------------------------
+    Grand Total:       11 782       76    4 510      188
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.bss$$Base              0x1fff04b8          --   Gb  - Linker created -
+.bss$$Limit             0x1fff0518          --   Gb  - Linker created -
+.data$$Base             0x1fff0410          --   Gb  - Linker created -
+.data$$Limit            0x1fff046c          --   Gb  - Linker created -
+.data_init$$Base        0x00003760          --   Gb  - Linker created -
+.data_init$$Limit       0x000037bc          --   Gb  - Linker created -
+.iar.init_table$$Base   0x00003b58          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00003b68          --   Gb  - Linker created -
+?main                   0x00003c9d         Code  Gb  cmain.o [5]
+ADCx                    0x1fff0410    0x8  Data  Gb  adc.o [1]
+ASSERT_FAILED_STR       0x00003810   0x4c  Data  Gb  assert.o [1]
+CodeRelocate$$Base      0x0000385c          --   Gb  - Linker created -
+CodeRelocate$$Limit     0x000038a8          --   Gb  - Linker created -
+CodeRelocateRam$$Base   0x1fff046c          --   Gb  - Linker created -
+CodeRelocateRam$$Limit  0x1fff04b8          --   Gb  - Linker created -
+DMA_CH0_Handler         0x0000370b    0x2  Code  Gb  isr.o [1]
+DMA_CH4_Handler         0x0000360d    0x2  Code  Gb  isr.o [1]
+F14x16                  0x000037bc   0x54  Data  Gb  OLED.o [1]
+F14x16_Idx              0x00003f5c    0x8  Data  Gb  OLED.o [1]
+F8X16                   0x0000044c  0x5f0  Data  Gb  OLED.o [1]
+FTM0_IRQHandler         0x00003709    0x2  Code  Gb  isr.o [1]
+FTM_PWM_Duty            0x00002f05   0x6c  Code  Gb  FTM.o [1]
+FTM_PWM_init            0x00002c0d  0x2f8  Code  Gb  FTM.o [1]
+FTM_init                0x0000287d   0x1c  Code  Gb  Speed_Control.o [1]
+FTMx                    0x1fff0418    0xc  Data  Gb  FTM.o [1]
+GPIOx                   0x1fff0424   0x14  Data  Gb  gpio.o [1]
+HardFault_Handler       0x000036fd    0xa  Code  Gb  isr.o [1]
+LED_init                0x000010c1   0x34  Code  Gb  LED.o [1]
+LPT_Handler             0x0000370d   0x18  Code  Gb  isr.o [1]
+LPT_INT_count           0x1fff04c8    0x4  Data  Gb  isr.o [1]
+Master_Adc_Config       0x1fff04b8   0x10  Data  Gb  adc.o [1]
+OLED_DLY_ms             0x00000b9b   0x1a  Code  Gb  OLED.o [1]
+OLED_Display_Num        0x00000f1d   0x42  Code  Gb  OLED.o [1]
+OLED_Fill               0x00000b5f   0x3c  Code  Gb  OLED.o [1]
+OLED_HEXACSII           0x00000eeb   0x32  Code  Gb  OLED.o [1]
+OLED_Init               0x00000bb5  0x14a  Code  Gb  OLED.o [1]
+OLED_P14x16Str          0x00000da3  0x148  Code  Gb  OLED.o [1]
+OLED_P8x16Str           0x00000cff   0xa4  Code  Gb  OLED.o [1]
+OLED_Print              0x00000f5f   0x6a  Code  Gb  OLED.o [1]
+OLED_Set_Pos            0x00000b33   0x2c  Code  Gb  OLED.o [1]
+OLED_WrCmd              0x00000ab9   0x7a  Code  Gb  OLED.o [1]
+OLED_WrDat              0x00000a3d   0x7a  Code  Gb  OLED.o [1]
+PIT0_IRQHandler         0x0000360f   0xdc  Code  Gb  isr.o [1]
+PIT1_IRQHandler         0x000036eb    0xe  Code  Gb  isr.o [1]
+PORTC_IRQHandler        0x0000360b    0x2  Code  Gb  isr.o [1]
+PORTD_IRQHandler        0x00003609    0x2  Code  Gb  isr.o [1]
+PORTX                   0x1fff0438   0x14  Data  Gb  gpio.o [1]
+PWMC                    0x1fff04cc    0x4  Data  Gb  main.o [1]
+PendSV_Handler          0x00003707    0x2  Code  Gb  isr.o [1]
+Region$$Table$$Base     0x00003b58          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00003b68          --   Gb  - Linker created -
+Reset_Handler           0x00000411         Code  Gb  crt0.o [1]
+Sensor_init             0x000024ed   0x24  Code  Gb  sensor.o [1]
+SysTick_Handler         0x000036fb    0x2  Code  Gb  isr.o [1]
+TIME0flag_100ms         0x1fff0515    0x1  Data  Gb  isr.o [1]
+TIME0flag_10ms          0x1fff0512    0x1  Data  Gb  isr.o [1]
+TIME0flag_200ms         0x1fff0516    0x1  Data  Gb  isr.o [1]
+TIME0flag_20ms          0x1fff0513    0x1  Data  Gb  isr.o [1]
+TIME0flag_2ms           0x1fff0510    0x1  Data  Gb  isr.o [1]
+TIME0flag_500ms         0x1fff0517    0x1  Data  Gb  isr.o [1]
+TIME0flag_5ms           0x1fff0511    0x1  Data  Gb  isr.o [1]
+TIME0flag_80ms          0x1fff0514    0x1  Data  Gb  isr.o [1]
+TimeCount               0x1fff050c    0x2  Data  Gb  isr.o [1]
+TurnPWM_d               0x1fff04f8    0x4  Data  Gb  sensor.o [1]
+TurnPWM_dlast           0x1fff04fc    0x4  Data  Lc  sensor.o [1]
+UARTx                   0x1fff0454   0x18  Data  Gb  uart.o [1]
+USART0_IRQHandler       0x000036f9    0x2  Code  Gb  isr.o [1]
+__BOOT_STACK_ADDRESS {Abs}
+                        0x2000fff8          --   Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x1fff0000          --   Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x00000000          --   Gb  command line/config [2]
+__aeabi_d2iz            0x00002a91         Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x00002abd         Code  Gb  DblToI32.o [4]
+__aeabi_ddiv            0x000033c1         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x000028ed         Code  Gb  DblMul.o [4]
+__aeabi_i2d             0x000028bd         Code  Gb  I32ToDbl.o [4]
+__aeabi_ui2d            0x000028d1         Code  Gb  I32ToDbl.o [4]
+__cmain                 0x00003c9d         Code  Gb  cmain.o [5]
+__code_start__ {Abs}    0x00000410          --   Gb  command line/config [2]
+__exit                  0x00003ccd   0x14  Code  Gb  exit.o [6]
+__iar_d2uiz             0x00002ac9         Code  Gb  DblToI32.o [4]
+__iar_data_init3        0x00003b31   0x28  Code  Gb  data_init.o [5]
+__iar_program_start     0x00003f51         Code  Gb  cstartup_M.o [5]
+__iar_ui2d              0x000028d5         Code  Gb  I32ToDbl.o [4]
+__iar_zero_init3        0x0000167f   0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00003cb7    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000  0x410  Data  Gb  vectors.o [1]
+_call_main              0x00003ca9         Code  Gb  cmain.o [5]
+_exit                   0x00003cc1         Code  Gb  cexit.o [5]
+_main                   0x00003cb3         Code  Gb  cmain.o [5]
+ad_ave                  0x000032c9   0x6c  Code  Gb  adc.o [1]
+ad_once                 0x00003255   0x74  Code  Gb  adc.o [1]
+adc_config_alt          0x00003399   0x26  Code  Lc  adc.o [1]
+adc_init                0x0000302d  0x228  Code  Gb  adc.o [1]
+adc_start               0x00003335   0x42  Code  Gb  adc.o [1]
+assert_failed           0x000010a1   0x20  Code  Gb  assert.o [1]
+bee1                    0x1fff04e8    0x4  Data  Gb  sensor.o [1]
+bee2                    0x1fff04ec    0x4  Data  Gb  sensor.o [1]
+bee3                    0x1fff04f0    0x4  Data  Gb  sensor.o [1]
+bee4                    0x1fff04f4    0x4  Data  Gb  sensor.o [1]
+bus_clk_khz             0x1fff0508    0x4  Data  Gb  sysinit.o [1]
+common_startup          0x00001bd5   0x9c  Code  Gb  startup.o [1]
+core_clk_khz            0x1fff0500    0x4  Data  Gb  sysinit.o [1]
+core_clk_mhz            0x1fff0504    0x4  Data  Gb  sysinit.o [1]
+count                   0x1fff050e    0x2  Data  Gb  moter_pid.o [1]
+cpu_identify            0x000017cf  0x204  Code  Gb  start.o [1]
+default_isr             0x00003c29   0x20  Code  Gb  vectors.o [1]
+delayms                 0x00001645   0x1a  Code  Gb  delay.o [1]
+douji_init              0x0000289d   0x20  Code  Gb  Turn.o [1]
+enable_irq              0x00001f47   0x92  Code  Gb  arm_cm4.o [1]
+exit                    0x00003cbb    0x4  Code  Gb  exit.o [3]
+flash_identify          0x000019d3   0xa2  Code  Gb  start.o [1]
+gpio_init               0x00000fdd   0xb6  Code  Gb  gpio.o [1]
+led                     0x000010f5   0x20  Code  Gb  LED.o [1]
+lptmr_counter_init      0x00002b51   0xa0  Code  Gb  lptmr.o [1]
+main                    0x00001ccd  0x274  Code  Gb  main.o [1]
+mcg_div                 0x1fff044c    0x8  Data  Gb  mcg.o [1]
+motor_output            0x1fff04d4    0x4  Data  Gb  main.o [1]
+motor_pid               0x00002fb9   0x74  Code  Gb  moter_pid.o [1]
+out_char                0x00003f11    0xe  Code  Gb  io.o [1]
+pit_init                0x00002ae9   0x5c  Code  Gb  PIT.o [1]
+pll_init                0x00002001  0x2ec  Code  Gb  mcg.o [1]
+printf                  0x00001623   0x1e  Code  Gb  printf.o [1]
+printk                  0x0000124d  0x3d6  Code  Gb  printf.o [1]
+printk_mknumstr         0x000011a1   0x70  Code  Lc  printf.o [1]
+printk_pad_space        0x0000122f   0x1e  Code  Lc  printf.o [1]
+printk_pad_zero         0x00001211   0x1e  Code  Lc  printf.o [1]
+printk_putc             0x00001175   0x2c  Code  Lc  printf.o [1]
+process                 0x00002511  0x346  Code  Gb  sensor.o [1]
+pwm_count               0x1fff04d0    0x4  Data  Gb  main.o [1]
+set_sys_dividers        0x1fff046d   0x4c  Code  Gb  mcg.o [1]
+start                   0x000016a1  0x12e  Code  Gb  start.o [1]
+strlen                  0x00001665   0x1a  Code  Gb  stdlib.o [1]
+sysinit                 0x00001c71   0x48  Code  Gb  sysinit.o [1]
+uart_init               0x000022ed  0x1a0  Code  Gb  uart.o [1]
+uart_putchar            0x0000248d   0x1a  Code  Gb  uart.o [1]
+water_lights            0x00001115   0x5a  Code  Gb  LED.o [1]
+wdog_disable            0x00001b9d   0x16  Code  Gb  wdog.o [1]
+wdog_unlock             0x00001bb5   0x16  Code  Gb  wdog.o [1]
+write_vtor              0x00001f41    0x6  Code  Gb  arm_cm4.o [1]
+
+
+[1] = C:\Users\卫驰\Desktop\17年电磁组\程序5.6.5.02 解决入圆问题 解决丢线丢失问题\程序5.5.7.42 速度125 240 稳定\电轨组程序框架\build\fire_demo\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  11 782 bytes of readonly  code memory
+      76 bytes of readwrite code memory
+   4 510 bytes of readonly  data memory
+     188 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

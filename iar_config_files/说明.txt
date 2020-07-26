@@ -1,0 +1,2 @@
+使用蓝宙的单片机用fire_ROM_K60N512.icf
+其他单片机可选用LPLD_K60DN512_FLASH.icf

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\build\fire_demo\fire_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\gpio_demo\fire_gpio_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\led_demo\fire_led_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\exti_demo\fire_exti_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\lptmr_demo\fire_lptmr_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\uart_send_demo\fire_uart_send_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\uart_loop_demo\fire_uart_loop_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\uart_int_demo\fire_uart_int_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\adc_demo\fire_adc_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\dac_demo\fire_dac_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\pwm_demo\fire_pwm_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\Input_demo\fire_Input_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\pit_demo\fire_pit_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\PWM_Input_PIT_demo\fire_PWM_Input_PIT_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\i2c_demo\fire_i2c_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\dma_demo\fire_dma_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\flash_demo\fire_flash_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\ucos_led_demo\fire_ucos_led_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\cmsis_demo\fire_cmsis_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\sd_demo\fire_sd_demo.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+
